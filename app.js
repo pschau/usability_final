@@ -31,6 +31,9 @@ app.get('/', function(req, res) {
   res.render('index');
 });
 
+app.get('/feat_vid', function(req, res) {
+  res.render('feat_vid');
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
