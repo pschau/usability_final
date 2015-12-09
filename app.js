@@ -35,6 +35,10 @@ app.get('/feat_vid', function(req, res) {
   res.render('feat_vid');
 });
 
+app.get('/recipe-search', function(req, res) {
+  res.render('recipe-search');
+});
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
