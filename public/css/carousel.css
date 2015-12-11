@@ -1,14 +1,9 @@
-.carousel-slide {
-	width: 800px;
+.carousel-control {
+  padding-top:10%;
+  width:3%;
 }
-.carousel-inner .active.left { left: -25%; }
-.carousel-inner .next        { left:  25%; }
-.carousel-inner .prev        { left: -25%; }
-.carousel-control            { width:  4%; }
-.carousel-control.left,.carousel-control.right {
-    margin-left: 1px; 
-    background: none;
-}
-#left-control{
-	margin-left:10px;
+
+.video-title {
+	margin-top:5px;
+	color: green;
 }
