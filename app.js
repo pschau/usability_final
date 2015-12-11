@@ -39,6 +39,22 @@ app.get('/recipe-search', function(req, res) {
   res.render('recipe-search');
 });
 
+app.get('/create_account', function(req, res) {
+  res.render('create_account');
+});
+
+app.get('/shopping_list', function(req, res) {
+  res.render('shopping_list');
+})
+
+app.get('/sign_in', function(req, res) {
+  res.render('sign_in');
+})
+
+app.get('/advanced_search', function(req, res) {
+  res.render('advanced_search');
+})
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
