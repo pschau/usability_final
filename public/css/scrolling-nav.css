@@ -33,9 +33,9 @@ of those sections to manage the look and feel of the site. */
 
 .intro-section {
     height: 60%;
-    padding-top: 150px;
+    padding-top: 100px;
     text-align: center;
-    background-image:url(http://www.ucook.com/Assets/156/Images/Ucook_splash.jpg);
+    background: #fff;
     background-size: cover;
 }
 
