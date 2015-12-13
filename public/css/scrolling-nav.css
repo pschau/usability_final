@@ -30,9 +30,10 @@ html {
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
 The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
 of those sections to manage the look and feel of the site. */
+/* rgba(2, 23, 37, 0.96);*/
 .nav-section {
     height:10%;
-    background-color: rgba(2, 23, 37, 0.96);
+    background-color: #fff
 }
 
 .intro-section {
@@ -178,7 +179,7 @@ html, body {
   }
   .cd-header.menu-is-open {
     /* add a background color to the header when the navigation is open */
-    background-color: rgba(2, 23, 37, 0.96);
+    background-color: white;
   }
 }
 
@@ -218,11 +219,11 @@ html, body {
 }
 .cd-secondary-nav li {
   display: inline-block;
-  margin-left: 2.2em;
+  margin-left: 2em;
 }
 .cd-secondary-nav a {
   display: inline-block;
-  color: white;
+  color: rgba(2, 23, 37, 0.96);;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -240,8 +241,10 @@ html, body {
   width: 50px;
   background-color: #03263d;
 }
+
+/* menu text */
 .cd-primary-nav-trigger .cd-menu-text {
-  color: white;
+  color: rgba(2, 23, 37, 0.96);
   text-transform: uppercase;
   font-weight: 700;
   /* hide the text on small devices */
@@ -262,7 +265,7 @@ html, body {
   transform: translateX(-50%) translateY(-50%);
   width: 18px;
   height: 2px;
-  background-color: white;
+  background-color: rgba(2, 23, 37, 0.96);;
   -webkit-transition: background-color 0.3s;
   -moz-transition: background-color 0.3s;
   transition: background-color 0.3s;
@@ -273,7 +276,7 @@ html, body {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: white;
+  background-color: rgba(2, 23, 37, 0.96);;
   right: 0;
   -webkit-transition: -webkit-transform .3s, top .3s, background-color 0s;
   -moz-transition: -moz-transform .3s, top .3s, background-color 0s;
@@ -286,10 +289,10 @@ html, body {
   top: 5px;
 }
 .cd-primary-nav-trigger .cd-menu-icon.is-clicked {
-  background-color: rgba(255, 255, 255, 0);
+  background-color: white;
 }
 .cd-primary-nav-trigger .cd-menu-icon.is-clicked::before, .cd-primary-nav-trigger .cd-menu-icon.is-clicked::after {
-  background-color: white;
+  background-color: rgba(2, 23, 37, 0.96);
 }
 .cd-primary-nav-trigger .cd-menu-icon.is-clicked::before {
   top: 0;
@@ -337,6 +340,7 @@ html, body {
   }
 }
 
+/* controls the color background */
 .cd-primary-nav {
   /* by default it's hidden - on top of the viewport */
   position: fixed;
@@ -344,7 +348,7 @@ html, body {
   top: 0;
   height: 100%;
   width: 100%;
-  background: rgba(2, 23, 37, 0.96);
+  background: white;
   z-index: 2;
   text-align: center;
   padding: 50px 0;
@@ -391,11 +395,11 @@ html, body {
   font-weight: 700;
   font-size: 20px;
   font-size: 0.875rem;
-  margin: 2.4em 0 .8em;
+  margin: .4em 0 .8em;
 }
 
 .cd-primary-nav .cd-label a {
-    color:white;
+    color: rgba(2, 23, 37, 0.96);
     font-size:16px;
 }
 .cd-primary-nav .cd-social {
@@ -457,6 +461,8 @@ html, body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* text for open nav bar */
 .cd-intro h1 {
   position: absolute;
   width: 90%;
