@@ -35,6 +35,10 @@ app.get('/feat_vid', function(req, res) {
   res.render('feat_vid');
 });
 
+app.get('/baking-vid', function(req, res) {
+  res.render('baking');
+});
+
 app.get('/recipe-search', function(req, res) {
   res.render('recipe-search');
 });
