@@ -56,14 +56,16 @@ of those sections to manage the look and feel of the site. */
     height: 50%;
     padding-top: 150px;
     text-align: center;
-    background-image: url(/images/video_background.jpeg);
+    background-image: url(/images/video_background.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .shopping-section {
     height: 50%;
     padding-top: 150px;
     text-align: center;
-    background-image: url(/images/shopping_background.jpg);
+    background-image: url(/images/shopping_background.png);
 }
 
 .carousel-section{

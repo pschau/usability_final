@@ -59,6 +59,9 @@ app.get('/advanced_search', function(req, res) {
   res.render('advanced_search');
 })
 
+app.get('/recipe_page', function(req, res) {
+  res.render('recipe_page');
+})
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');

@@ -1,0 +1,17 @@
+#top, #bottom, #left, #right {
+	background: #E0E0E0;
+	position: fixed;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 100px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+		
+/*	#bottom {
+		left: 0; right: 0;
+		height: 15px;
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0; }*/

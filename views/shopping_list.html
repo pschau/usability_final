@@ -5,32 +5,11 @@
     <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/scrolling-nav.css" rel="stylesheet">
   </head><body>
-    <div class="section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-1">
-            <a href="#"><i class="fa fa-3x fa-fw fa-align-justify"></i></a>
-          </div>
-          <div class="col-md-11">
-            <ul class="nav nav-pills">
-              <li class="active">
-                <a href="#">uCook</a>
-              </li>
-              <li>
-                <a href="#">About</a>
-              </li>
-              <li>
-                <a href="#">Services</a>
-              </li>
-              <li>
-                <a href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+        <div class="menu">
     </div>
+    <% include navbar_nosearch.html%>
     <div class="modal fade">
       <div class="modal-dialog"></div>
     </div>
@@ -38,21 +17,21 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h1 class="text-danger">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <h1 class="text-danger" style="color: rgba(2, 23, 37, 0.96);">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Shopping List &nbsp; &nbsp;&nbsp;</h1>
           </div>
         </div>
       </div>
     </div>
-    <div class="section">
+    <div class="section" style="margin: 0 auto;">
       <div class="container">
         <div class="row">
           <div class="col-lg-8">
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search for...">
+              <input type="text" class="form-control" placeholder="Add another item...">
               <span class="input-group-btn">
-                <button class="btn btn-info" type="button">Add More!</button>
+                <button class="btn btn-info" type="button" style="background-color: rgba(2, 23, 37, 0.96); border-color: rgba(2, 23, 37, 0.96);">Add to List</button>
               </span>
             </div>
             <!-- /input-group -->
@@ -163,14 +142,14 @@
               <thead>
                 <tr>
                   <th>
-                    <h3>#</h3>
+                    <h3></h3>
                   </th>
                   <th></th>
                   <th>
-                    <h3>Items</h3>
+                    <h3>Item</h3>
                   </th>
                   <th>
-                    <h3>Amount</h3>
+                    <h3>Quantity</h3>
                   </th>
                 </tr>
               </thead>
@@ -185,17 +164,17 @@
       <div class="container">
         <div class="row">
           <div class="col-md-3">
-            <a class="btn btn-primary">Save to Account</a>
+            <a class="btn btn-primary" style="background-color: rgba(2, 23, 37, 0.96); border-color: rgba(2, 23, 37, 0.96);">Save to Account</a>
           </div>
           <div class="col-md-3">
-            <a class="btn btn-primary">Creat A Account</a>
+            <a class="btn btn-primary" style="background-color: rgba(2, 23, 37, 0.96); border-color: rgba(2, 23, 37, 0.96);">Create Account</a>
           </div>
           <div class="col-md-3">
-            <a class="btn btn-primary">Print</a>
+            <a class="btn btn-primary" style="background-color: rgba(2, 23, 37, 0.96); border-color: rgba(2, 23, 37, 0.96);">Print</a>
           </div>
         </div>
       </div>
     </div>
-  
+<script src="js/scrolling-nav.js"></script>
 
 </body></html>
