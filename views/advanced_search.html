@@ -15,17 +15,77 @@
 </head>
 
 <body>
-	<%include navbar.html%>
+	<%include navbar_nosearch.html%>
+	<div class="section" style="text-align:center;">
+            <h1 class="text-danger" style="color: rgba(2, 23, 37, 0.96);">Advanced Search</h1>
+    </div>
+	
 
-	<input type="text" value="Search by Recipe Name" id="text" style="width: 150px;" />
-	<br />
-	<input type="button" value="Click Me" id="button" />
-
-	<div>
-		<h1>Ingredient Suggestions</h1>
-		<span class="icon-plus" style="font-size:16.09375px"> butter</span>
+	<div class="section" style="padding-top:20px;text-align:left;">
+		<h1 style="font-size:26px; text-align:center;">Ingredients</h1>
+		<ul class="checkbox-grid" style="padding-top:10px; margin-left:100px;">
+		    <li><input type="checkbox" name="text1" value="value1" style="margin-right:10px;"/><label for="text1"> butter</label></li>
+		    <li><input type="checkbox" name="text2" value="value2"style="margin-right:10px;" /><label for="text2"> flour</label></li>
+		    <li><input type="checkbox" name="text3" value="value3"style="margin-right:10px;" /><label for="text3"> bacon</label></li>
+		    <li><input type="checkbox" name="text4" value="value4"style="margin-right:10px;" /><label for="text4"> cheddar</label></li>
+		    <li><input type="checkbox" name="text5" value="value5"style="margin-right:10px;" /><label for="text5"> potato</label></li>
+		    <li><input type="checkbox" name="text6" value="value6"style="margin-right:10px;" /><label for="text6"> sugar</label></li>
+		    <li><input type="checkbox" name="text7" value="value7"style="margin-right:10px;" /><label for="text7"> milk</label></li>
+		    <li><input type="checkbox" name="text8" value="value8"style="margin-right:10px;" /><label for="text8"> olive oil</label></li>
+		</ul>
+	
 	</div>
+	<div style="text-align:center;">
+	<button id="reload-ingred" class="btn btn-sm btn-primary" style="margin-top:25px;background-color:black;border-color:black; text-align:center;">More ingredients</button>
+</div>
+	<div class="section" style="padding-top:20px;text-align:left;">
+		<h1 style="font-size:26px; text-align:center;">Cuisine</h1>
+		<ul class="checkbox-grid" style="padding-top:10px;margin-left:100px;">
+		    <li><input type="checkbox" name="text1" value="value1" style="margin-right:10px;"/><label for="text1"> Asian</label></li>
+		    <li><input type="checkbox" name="text2" value="value2"style="margin-right:10px;" /><label for="text2"> Caribbean</label></li>
+		    <li><input type="checkbox" name="text3" value="value3"style="margin-right:10px;" /><label for="text3"> French</label></li>
+		    <li><input type="checkbox" name="text4" value="value4"style="margin-right:10px;" /><label for="text4"> Chinese</label></li>
+		    <li><input type="checkbox" name="text5" value="value5"style="margin-right:10px;" /><label for="text5"> Indian</label></li>
+		    <li><input type="checkbox" name="text6" value="value6"style="margin-right:10px;" /><label for="text6"> Thai</label></li>
+		    <li><input type="checkbox" name="text7" value="value7"style="margin-right:10px;" /><label for="text7"> German</label></li>
+		    <li><input type="checkbox" name="text8" value="value8"style="margin-right:10px;" /><label for="text8"> Italian</label></li>
+		    <li><input type="checkbox" name="text9" value="value9"style="margin-right:10px;" /><label for="text9"> Mediterranean</label></li>
+		    <li><input type="checkbox" name="text10" value="value10"style="margin-right:10px;" /><label for="text10"> Mexican</label></li>
+		    <li><input type="checkbox" name="text11" value="value11"style="margin-right:10px;" /><label for="text11"> Tex-Mex</label></li>
+		</ul>
+	</div>
+	<div class="section" style="padding-top:80px;text-align:left;">
+		<h1 style="font-size:26px; text-align:center;">Meal Type</h1>
+		<ul class="checkbox-grid" style="padding-top:10px;margin-left:100px;">
+		    <li><input type="checkbox" name="text1" value="value1" style="margin-right:10px;"/><label for="text1"> Breads</label></li>
+		    <li><input type="checkbox" name="text2" value="value2"style="margin-right:10px;" /><label for="text2"> Breakfast</label></li>
+		    <li><input type="checkbox" name="text3" value="value3"style="margin-right:10px;" /><label for="text3"> Cakes</label></li>
+		    <li><input type="checkbox" name="text4" value="value4"style="margin-right:10px;" /><label for="text4"> Casseroles</label></li>
+		    <li><input type="checkbox" name="text5" value="value5"style="margin-right:10px;" /><label for="text5"> Cookies</label></li>
+		    <li><input type="checkbox" name="text6" value="value6"style="margin-right:10px;" /><label for="text6"> Desserts</label></li>
+		    <li><input type="checkbox" name="text7" value="value7"style="margin-right:10px;" /><label for="text7"> Dinner</label></li>
+		    <li><input type="checkbox" name="text8" value="value8"style="margin-right:10px;" /><label for="text8"> Dips</label></li>
+		    <li><input type="checkbox" style="margin-right:10px;" /><label> Drinks</label></li>
+		    <li><input type="checkbox" style="margin-right:10px;" /><label> Fish recipes</label></li>
+		    <li><input type="checkbox" style="margin-right:10px;" /><label> Grilling</label></li>
+		    <li><input type="checkbox" style="margin-right:10px;" /><label> BBQ</label></li>
+		    <li><input type="checkbox" style="margin-right:10px;" /><label> Kid Friendly</label></li>
+		    <li><input type="checkbox" style="margin-right:10px;" /><label> Quick and Easy</label></li>
+		    <li><input type="checkbox" style="margin-right:10px;" /><label> Salads</label></li>
+		    <li><input type="checkbox" style="margin-right:10px;" /><label> Sandwiches</label></li>
+		    <li><input type="checkbox" style="margin-right:10px;" /><label> Slow Cooker</label></li>
+		    <li><input type="checkbox" style="margin-right:10px;" /><label> Soups</label></li>
+		    <li><input type="checkbox" style="margin-right:10px;" /><label> Vegetarian</label></li>
 
+		</ul>
+	</div>
+<div style ="text-align:center; padding-top:150px;">
+	<input type="text" value="Search by Recipe Name" id="text" style="width: 160px; text-align:left;" />
+	<br />
+	<div style="padding-top:10px;">
+	<span class="normal-search" style="padding-top:20px;"><button class="normal-search" onclick="location.href='/recipe-search';">Search</button></span>
+</div>
+</div>
 
 	<script src="js/advanced_search.js"></script>
  <!-- Bootstrap Core JavaScript -->
