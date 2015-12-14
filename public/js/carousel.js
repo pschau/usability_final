@@ -1,9 +1,9 @@
 $(document).ready(function() {
-  $('#myCarousel').carousel({
+  $('#myCarousel,#myCarousel2,#myCarousel3').carousel({
   interval: 10000
   })
     
-    $('#myCarousel').on('slid.bs.carousel', function() {
+    $('#myCarousel,#myCarousel2,#myCarousel3').on('slid.bs.carousel', function() {
       //alert("slid");
   });
     
