@@ -1,11 +1,36 @@
+.carousel {
+	background: none;
+	border: none;
+	background-image: none;
+	padding:none;
+}
 .carousel-control {
-  padding-top:10%;
-  width:3%;
+  padding-top:4%;
+  width:5%;
 
 }
-
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+    color: rgba(2, 23, 37, 0.96);;
+    font-size:75px;
+}
 .video-title {
 	margin-top:5px;
-	color: black;
+	color: rgba(2, 23, 37, 0.96);
 }
+.carousel-control.left {
+	padding-right:30px;
+}
+.carousel-control.right {
+	padding-left:30px;
+}
+.carousel-control.left, .carousel-control.right {
+  background: none !important;
+  filter: progid: none !important;
+  outline: 0;
+ }
+.carousel:hover .carousel-control {
+  visibility: visible;
+}
+
 
