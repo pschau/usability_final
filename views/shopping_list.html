@@ -30,7 +30,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <table class="table">
+            <table id="list"class="table">
               <tbody>
                 <tr>
                   <td>1</td>
@@ -145,15 +145,16 @@
         </div>
       </div>
     </div>
+    
 
     <div class="section" style="margin: 0 auto;">
       <div class="container">
         <div class="row">
           <div class="col-lg-8">
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="Add another item..." style="width: 500px">
+              <input type="text" id="AddItemText" class="form-control" placeholder="Add another item..." style="width: 500px">
 
-                <button class="btn btn-info" type="button" style="background-color: rgba(2, 23, 37, 0.96); border-color: rgba(2, 23, 37, 0.96); margin-left: 1px">Add to List</button>
+                <button id="addToList" class="btn btn-info" type="button" style="background-color: rgba(2, 23, 37, 0.96); border-color: rgba(2, 23, 37, 0.96); margin-left: 1px" >Add to List</button>
 
             </div>
             <!-- /input-group -->
@@ -161,9 +162,28 @@
         </div>
       </div>
     </div>
+  
+
+ <!-- jQuery -->
+<script src="js/jquery.js"></script>
+<script src="js/scrolling-nav.js"></script>
+<script type="text/javascript">
+     var counter = 3;
+    jQuery("#addToList").click(function(event){
+        event.preventDefault();
+        counter++;
+        var newRow = jQuery('<tr><td>'+counter+'</td><td><a href="#"><i id="delete"class="fa fa-2x fa-fw fa-trash-o"></i></a></td><td>'+$("#AddItemText").val()+'</td><td><div class="col-lg-3"><div class="input-group"><input type="text" class="form-control" aria-label="..."><div class="input-group-btn"><button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Units<span class="caret"></span></button><ul class="dropdown-menu dropdown-menu-right"><li><a href="#">cups</a></li><li><a href="#">oz</a></li><li><a href="#">lb</a></li></ul></div><!-- /btn-group --></div></div></td></tr><tr>');
+        jQuery("#list").append(newRow);
+    });
+    $(function(){
+    $('.dropdown-menu li').click(function(e){
+    //e.stopPropagation();
+          e.preventDefault();
+          $(this).closest('ul').siblings('.btn-default').html($(this).text());
+      });
+    });
+   
     
 
-
-<script src="js/scrolling-nav.js"></script>
-
-</body></html>
+    </script>
+  </body></html>
