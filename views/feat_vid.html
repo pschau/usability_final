@@ -33,11 +33,11 @@
 
     <%include navbar.html%>
         
-    <div class="col-md-12 text-center"><h3>This Week's Featured Cooking Videos</h3></div>
+    <div class="col-md-12 text-center" style="color:rgba(2, 23, 37, 0.96)"><h3>This Week's Featured Cooking Videos</h3></div>
     <section id="feat" class="carousel-section">
     <div class="container">
     <div class="col-md-12">
-        <div class="well">
+        <div>
             <div id="myCarousel" class="carousel slide">
                 
                 <!-- Carousel items -->
@@ -45,16 +45,16 @@
                     <div class="item active">
                         <div class="row">
                             <div class="col-sm-3"><a onclick="big_yt('video_container','http://www.youtube.com/v/V_yDTSrsv5g?version=3&amp;autoplay=1')"><img src="http://img.youtube.com/vi/V_yDTSrsv5g/0.jpg" height="200" width="200"  title="Grilling" alt="" style="cursor: pointer"></a> 
-                                <p class="video-title">Grilling Steak</p>
+                                <strong><p class="video-title">Grilling Steak</p></strong>
                             </div>
                             <div class="col-sm-3"><a onclick="big_yt('video_container','http://www.youtube.com/v/wYCE_hVF8lo?version=3&amp;autoplay=1')"><img src="http://img.youtube.com/vi/wYCE_hVF8lo/0.jpg" height="200" width="200"  title="Grilling" alt="" style="cursor: pointer"></a> 
-                                <p class="video-title">Brining Chicken</p>
+                                <strong><p class="video-title">Brining Chicken</p></strong>
                             </div>
                             <div class="col-sm-3"><a onclick="big_yt('video_container','http://www.youtube.com/v/IdIQnsjOIL0?version=3&amp;autoplay=1')"><img src="http://img.youtube.com/vi/IdIQnsjOIL0/0.jpg" height="200" width="200"  title="Grilling" alt="" style="cursor: pointer"></a> 
-                                <p class="video-title">Peeling Tomatoes</p>
+                                <strong><p class="video-title">Peeling Tomatoes</p></strong>
                             </div>
                             <div class="col-sm-3"><a onclick="big_yt('video_container','http://www.youtube.com/v/tRtAj6Uvu30?version=3&amp;autoplay=1')"><img src="http://img.youtube.com/vi/tRtAj6Uvu30/0.jpg" height="200" width="200"  title="Baking Fish" alt="" style="cursor: pointer"></a> 
-                                <p class="video-title">Baking Fish</p>
+                                <strong><p class="video-title">Baking Fish</p></strong>
                             </div>
                         </div>
                         <!--/row-->
@@ -63,23 +63,23 @@
                     <div class="item">
                         <div class="row">
                             <div class="col-sm-3"><a onclick="big_yt('video_container','http://www.youtube.com/v/YHBbXtXLB9U?version=3&amp;autoplay=1')"><img src="http://img.youtube.com/vi/YHBbXtXLB9U/0.jpg" height="200" width="200"  title="Roasting Beef" alt="" style="cursor: pointer"></a> 
-                                <p class="video-title">Roasting Beef</p>
+                                <strong><p class="video-title">Roasting Beef</p></strong>
                             </div>
                             <div class="col-sm-3"><a onclick="big_yt('video_container','http://www.youtube.com/v/kd6-1v2HCho?version=3&amp;autoplay=1')"><img src="http://img.youtube.com/vi/kd6-1v2HCho/0.jpg" height="200" width="200"  title="Grilling" alt="" style="cursor: pointer"></a> 
-                                <p class="video-title">Vegetable Cuts</p>
+                                <strong><p class="video-title">Vegetable Cuts</p></strong>
                             </div>
                             <div class="col-sm-3"><a onclick="big_yt('video_container','http://www.youtube.com/v/zppZJ0Rfd-w?version=3&amp;autoplay=1')"><img src="http://img.youtube.com/vi/zppZJ0Rfd-w/0.jpg" height="200" width="200"  title="Grilling" alt="" style="cursor: pointer"></a> 
-                                <p class="video-title">Zesting</p>
+                                <strong><p class="video-title">Zesting</p></strong>
                             </div>
                             <div class="col-sm-3"><a onclick="big_yt('video_container','http://www.youtube.com/v/3q1JN_3s3gw?version=3&amp;autoplay=1')"><img src="http://img.youtube.com/vi/3q1JN_3s3gw/0.jpg" height="200" width="200"  title="Grilling" alt="" style="cursor: pointer"></a> 
-                                <p class="video-title">Cutting Fish</p>
+                                <strong><p class="video-title">Cutting Fish</p></strong>
                             </div>
                         </div>
                         <!--/row-->
                     </div>
                     
                 </div>
-                <!--/carousel-inner--> <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
 
                 <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
             </div>
@@ -92,10 +92,10 @@
 </section>
 
 <div id="video_container"></div>
- <div class="col-md-12 text-center"><h3>Find Videos By Filter</h3></div>
-<div style="text-align:center;">  
+ <div class="col-md-12 text-center" style="color:rgba(2, 23, 37, 0.96); margin-top:-60px"><h3>Find Videos By Filter</h3></div>
+<div style="text-align:center; margin-bottom:200px">  
     <div class="btn-group">
-      <a href="#" class="btn btn-info btn-large dropdown-toggle" data-toggle="dropdown" style="background-color:black; border-color:black; margin-top:30px; margin-right:10px; margin-bottom:20px"> Cooking Method  <span class="caret"></span></a>
+      <a href="#" class="btn btn-info btn-large dropdown-toggle" data-toggle="dropdown" style="background-color: rgba(2, 23, 37, 0.96); border-color:rgba(2, 23, 37, 0.96); margin-top:30px; margin-right:10px;"> Cooking Method  <span class="caret"></span></a>
      <ul class="dropdown-menu">
          <li><a href="/baking-vid">Baking</a></li>
          <li><a>Grilling</a></li>
@@ -104,7 +104,7 @@
     </ul>
     </div>
     <div class="btn-group">
-      <a href="#" class="btn btn-info btn-large dropdown-toggle" data-toggle="dropdown" style="background-color:black; border-color:black; margin-top:30px; margin-right:10px; margin-bottom:20px"> Cuisine  <span class="caret"></span></a>
+      <a href="#" class="btn btn-info btn-large dropdown-toggle" data-toggle="dropdown" style="background-color:rgba(2, 23, 37, 0.96);; border-color:rgba(2, 23, 37, 0.96); margin-top:30px; margin-right:10px;"> Cuisine  <span class="caret"></span></a>
     <ul class="dropdown-menu">
          <li><a>Chinese</a></li>
          <li><a>Indian</a></li>
@@ -118,7 +118,7 @@
     </ul>
     </div>
     <div class="btn-group">
-      <a href="#" class="btn btn-info btn-large dropdown-toggle" data-toggle="dropdown" style="background-color:black; border-color:black; margin-top:30px; margin-right:10px; margin-bottom:20px"> Prep Time  <span class="caret"></span></a>
+      <a href="#" class="btn btn-info btn-large dropdown-toggle" data-toggle="dropdown" style="background-color:rgba(2, 23, 37, 0.96); border-color:rgba(2, 23, 37, 0.96); margin-top:30px; margin-right:10px;"> Prep Time  <span class="caret"></span></a>
     <ul class="dropdown-menu">
          <li><a>Under 10 min</a></li>
          <li><a>15 min</a></li>
@@ -130,7 +130,7 @@
     </div>
 
     <div class="btn-group">
-      <a href="#" class="btn btn-info btn-large dropdown-toggle" data-toggle="dropdown" style="background-color:black; border-color:black; margin-top:30px; margin-right:10px; margin-bottom:20px"> Meal  <span class="caret"></span></a>
+      <a href="#" class="btn btn-info btn-large dropdown-toggle" data-toggle="dropdown" style="background-color:rgba(2, 23, 37, 0.96); border-color:rgba(2, 23, 37, 0.96); margin-top:30px; margin-right:10px;"> Meal  <span class="caret"></span></a>
         <ul class="dropdown-menu">
          <li><a>Breakfast</a></li>
          <li><a>Lunch</a></li>
@@ -140,7 +140,7 @@
     </div>
 
     <div class="btn-group">
-      <a href="#" class="btn btn-info btn-large dropdown-toggle" data-toggle="dropdown" style="background-color:black; border-color:black; margin-top:30px; margin-right:10px; margin-bottom:20px"> Difficulty  <span class="caret"></span></a>
+      <a href="#" class="btn btn-info btn-large dropdown-toggle" data-toggle="dropdown" style="background-color:rgba(2, 23, 37, 0.96); border-color:rgba(2, 23, 37, 0.96); margin-top:30px; margin-right:10px;"> Difficulty  <span class="caret"></span></a>
         <ul class="dropdown-menu">
          <li><a>Easy</a></li>
          <li><a>Medium</a></li>
@@ -148,6 +148,9 @@
         </ul>
     </div>
 </div>
+    <div>
+    <button class="btn btn-info" type="button" style="background-color: rgba(2, 23, 37, 0.96); border-color: rgba(2, 23, 37, 0.96);">Search</button>
+    </div>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
